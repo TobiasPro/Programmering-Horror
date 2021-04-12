@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     // Her laver jeg refference til min players rigidbody 
     private Rigidbody2D myRigidbody;
 
-    // Her styre jeg hvor meget playerens position skal ændres
+    // Her styre jeg hvor meget playerens position skal ændres. Vector3 bruges fordi man skal kan gå op, ned og til siderne
     private Vector3 change;
     private Animator animator;
     void Start()

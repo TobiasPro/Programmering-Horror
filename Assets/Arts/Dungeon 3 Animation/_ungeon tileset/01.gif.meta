@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 609d50b4639c1f441b608eaa5fd45490
+guid: da9e49fe79bc64f4fbde8bfa13cb8e0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7509860518518112746
-    second: torch_0
+      213: -3164809056393425246
+    second: 01_0
+  - first:
+      213: 2830918157343804582
+    second: 01_0
+  - first:
+      213: -8314853801317715943
+    second: 01_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: torch_0
+      name: 01_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae1c0074a52683860800000000000000
-      internalID: 7509860518518112746
+      spriteID: 6ac4ea4b011794720800000000000000
+      internalID: 2830918157343804582
       vertices: []
       indices: 
       edges: []
@@ -136,7 +142,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
