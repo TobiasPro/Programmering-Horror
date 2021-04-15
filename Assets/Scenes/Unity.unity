@@ -257,7 +257,7 @@ Transform:
   - {fileID: 738418127}
   - {fileID: 1700282719}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &104853226
 GameObject:
@@ -2513,7 +2513,7 @@ Transform:
   - {fileID: 774111102}
   - {fileID: 888112052}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625034042
 GameObject:
@@ -2549,7 +2549,7 @@ Transform:
   - {fileID: 1062913959}
   - {fileID: 2012734714}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738418126
 GameObject:
@@ -11048,10 +11048,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.6, y: 14.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2056621259}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1764554342
 MonoBehaviour:
@@ -11065,7 +11064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68faacf55a945954994b40af249eec33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 8
 --- !u!114 &1764554343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11644,6 +11643,7 @@ GameObject:
   - component: {fileID: 2056621259}
   - component: {fileID: 2056621258}
   - component: {fileID: 2056621257}
+  - component: {fileID: 2056621260}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11710,9 +11710,23 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056621256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.1, z: -10}
+  m_LocalPosition: {x: -4.43, y: 14.259999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1764554341}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056621260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056621256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c189da8f6bcf44943ac64300f0ebf7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1764554341}
+  smoothing: 0.1
