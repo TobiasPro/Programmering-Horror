@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState{
+    walk,
+    attack,
+    interact
+}
 public class PlayerMovement : MonoBehaviour
 {
+    public PlayerState currentState;
    // Vi laver den public så den kan ændres i unity inspector
    public float speed; 
     // Her laver jeg refference til min players rigidbody 
@@ -27,9 +33,29 @@ public class PlayerMovement : MonoBehaviour
     // Man bruger GetAxisRaw for at undgå acceleration eller modstands acceleration som gør movement kommer til føle mere "snappy"
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        
+        if(Input.GetButtonDown("attack") && currentState != PlayerState.attack)
+        {
+            StartCoroutine(AttackCo());
+        }
+
+        else if (currentState == PlayerState.walk)
+        {
     // Laver en refference til UpdateAnimationAndMove
         UpdateAnimationAndMove();
+        }
+    }
+
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("attacking", true);
+        currentState = PlayerState.attack;
+        // Her putter jeg en forsinkelse før koden forsætter null betyder 1 frame. Så vi venter 1 frame.
+        yield return null;
+        animator.SetBool("attacking", false);
+        // .33 er hvor lang tid det tager spilleren at spille attack animatioen
+        yield return new WaitForSeconds(.33f);
+        // Her resetter vi spillerens state så spilleren kan gå igen efter at have attacked
+        currentState = PlayerState.walk;
     }
 
 // Laver en update mere fordi den jeg allerede har er ved at blive ret proppet så for at holde ting organiseret laver jeg en spicifik til animator
