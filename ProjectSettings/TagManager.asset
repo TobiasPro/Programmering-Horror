@@ -48,6 +48,12 @@ TagManager:
   - name: Signs
     uniqueID: 215217451
     locked: 0
+  - name: Gold
+    uniqueID: 1122669123
+    locked: 0
+  - name: Krukke
+    uniqueID: 2479037029
+    locked: 0
   - name: Player
     uniqueID: 2065799399
     locked: 0
