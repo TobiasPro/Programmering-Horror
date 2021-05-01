@@ -1,7 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// An enum is a special "class" that represents a group of constants (unchangeable/read-only variables).
 public enum PlayerState{
     walk,
     attack,
@@ -35,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         change.y = Input.GetAxisRaw("Vertical");
         if(Input.GetButtonDown("attack") && currentState != PlayerState.attack)
         {
+              // StartCoroutine Kan stoppe koden i noget tid og så komme tilbage og ændre noget andet kode unden at lave en timeout
             StartCoroutine(AttackCo());
         }
 
