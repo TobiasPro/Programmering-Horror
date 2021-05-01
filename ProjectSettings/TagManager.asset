@@ -54,6 +54,9 @@ TagManager:
   - name: Krukke
     uniqueID: 2479037029
     locked: 0
+  - name: NPC
+    uniqueID: 2911698701
+    locked: 0
   - name: Player
     uniqueID: 2065799399
     locked: 0
