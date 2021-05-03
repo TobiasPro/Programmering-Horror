@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // FixedUpdate kører med en konstant frame per second, dette er vigtigt når vi bruger animationer med player movement. Da vi kun brugte update oplevede vi fejl med at kunne gå igennem colliders
     void FixedUpdate()
     {
     // For hvert frame resetter jeg hvor meget player har ændret sig
