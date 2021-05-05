@@ -18,7 +18,6 @@ public class GoldManager : MonoBehaviour
     {
         // Tilføjer 1 point til det nuværende amount
         Point += amount;
-        // Her sørger vi for at Points: ændre sig. Ved at lave en string beholder vi selve ordets points ellers ville det bare være nummeret.
         PointText.text = "" + Point;
         // Her gør vi så hvis point eller flere som man har brug for TargetToEnable så bliver vores goal activ
         if(Point >= PointToEnableTarget)

@@ -6,7 +6,7 @@ public class Gold : MonoBehaviour
 {
 
     private GoldManager pm;
-    // Her laver jeg en public hvor jeg kan vælge hvilken lydfil der skal spilles ved opsamling af mønt
+    // Her laver jeg en public hvor jeg kan vælge hvilken lydfil der skal spilles ved opsamling af objekt
     public AudioClip PickUpAudioClip;
 
     // Start is called before the first frame update
@@ -26,9 +26,9 @@ public class Gold : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            // Her bestemmer man værdien af points
+            // Her bestemmer man værdien af guld
            pm.AddPoint(1);
-            // Her sørger vi for at clippet som vi refferede til i public bliver spillet. Når mønten bliver taget op. Transform position betyder bare clippet bliver spillet hvor vi er.
+            // Her sørger vi for at clippet som vi refferede til i public bliver spillet. Når guld bliver taget op. Transform position betyder bare clippet bliver spillet hvor vi er.
           AudioSource.PlayClipAtPoint(PickUpAudioClip, transform.position);
             Destroy(gameObject);
         }
