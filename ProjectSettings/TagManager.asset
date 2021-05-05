@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Breakable
   - Endgame
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -57,6 +58,9 @@ TagManager:
     locked: 0
   - name: NPC
     uniqueID: 2911698701
+    locked: 0
+  - name: Enemy
+    uniqueID: 2074835873
     locked: 0
   - name: Player
     uniqueID: 2065799399
